@@ -2,6 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
+	<script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld5qKUpAAAAABU4YUT8QRgALGhmVMj9h3Kw0IHA"></script>
+	<meta name="robots" content="index, follow">
+	<script>
+  		function onClick(e) {
+    			e.preventDefault();
+    			grecaptcha.enterprise.ready(async () => {
+      				const token = await grecaptcha.enterprise.execute('6Ld5qKUpAAAAABU4YUT8QRgALGhmVMj9h3Kw0IHA', {action: 'LOGIN'});
+    			});
+  		}
+	</script>
         <title>Alina</title>
     </head>
     <body bgcolor="white">
