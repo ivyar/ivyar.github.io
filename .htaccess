@@ -1,0 +1,5 @@
+# Обмеження доступу до сторінки "Про себе"
+<Files "about.html">
+    Order Allow,Deny
+    Deny from all
+</Files>
